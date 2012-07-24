@@ -22,6 +22,7 @@ public class Game {
 	private void initState(){
 		sm = new StateManager(this);
 		sm.enterState(new Camp1State(this, 0));
+		System.out.println("test");
 	}
 	
 	public static void main(String[] argv) {
