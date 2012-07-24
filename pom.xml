@@ -27,6 +27,14 @@
       <name>Slick Repository</name>
       <url>http://slick.cokeandcode.com/mavenrepo/slick/slick/248/</url>
     </repository>
+        <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>bison</id>
+      <name>Bison Repository</name>
+      <url>http://hammhome.net/alex/java/maven/bison/</url>
+    </repository>
   </repositories>
   <dependencies>
   	<dependency>
