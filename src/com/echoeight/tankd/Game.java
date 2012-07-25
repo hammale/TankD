@@ -17,9 +17,8 @@ public class Game {
 		dm = new DisplayManager(width, height, title);
 		initState();
 		LoadTextures.LoadAll();
-		af
 	}
-	
+	sdgf
 	private void initState(){
 		sm = new StateManager(this);
 		sm.enterState(new Camp1State(this, 0));

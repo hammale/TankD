@@ -68,6 +68,7 @@
     </dependencies>
     
     <build>
+    	<defaultGoal>clean compile package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
