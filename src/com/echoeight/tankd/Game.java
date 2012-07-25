@@ -17,6 +17,7 @@ public class Game {
 		dm = new DisplayManager(width, height, title);
 		initState();
 		LoadTextures.LoadAll();
+		af
 	}
 	
 	private void initState(){
