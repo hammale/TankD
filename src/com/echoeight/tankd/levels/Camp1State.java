@@ -48,7 +48,7 @@ public class Camp1State extends BaseState {
 		HEIGHT = game.dm.getHeight();
 		em = new EntityManager();
 	}
-    sdf
+    
     private long getTime() {
         return (Sys.getTime() * 1000) / Sys.getTimerResolution();
     }
