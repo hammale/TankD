@@ -33,7 +33,7 @@
       </snapshots>
       <id>bison</id>
       <name>Bison Repository</name>
-      <url>http://hammhome.net/alex/java/maven/bison/</url>
+      <url>http://hammhome.net/alex/java/maven/bison/1</url>
     </repository>
   </repositories>
   <dependencies>
