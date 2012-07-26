@@ -88,12 +88,12 @@ public class Camp1State extends BaseState {
         drawLevel();
         ui = new CampInput(game, em);
         player = new Tank(em, 400, 100, 34, 34, 0);
-        Wall tmpwall = new Wall(em, 200, 200,20,20);
+        Wall tmpwall = new Wall(em, 200, 200, 20, 20);
         walls.add(tmpwall);
-        System.out.println(tmpwall.getCuboid().a.getX() + ", " + tmpwall.getCuboid().a.getY());
-        System.out.println(tmpwall.getCuboid().b.getX() + ", " + tmpwall.getCuboid().b.getY());
-        System.out.println(tmpwall.getCuboid().c.getX() + ", " + tmpwall.getCuboid().c.getY());
-        System.out.println(tmpwall.getCuboid().d.getX() + ", " + tmpwall.getCuboid().d.getY());
+        System.out.println("A: " + tmpwall.getCuboid().a.getX() + ", " + tmpwall.getCuboid().a.getY());
+        //System.out.println(tmpwall.getCuboid().b.getX() + ", " + tmpwall.getCuboid().b.getY());
+        //System.out.println(tmpwall.getCuboid().c.getX() + ", " + tmpwall.getCuboid().c.getY());
+        //System.out.println(tmpwall.getCuboid().d.getX() + ", " + tmpwall.getCuboid().d.getY());
         bg = new BG(em, 0, 0, 600, 800);
         tanks.add(player);
 	}
@@ -144,10 +144,9 @@ public class Camp1State extends BaseState {
 		for(Entity entity : em.getMovingEntities()){
 			for(Wall wall : walls){
 				if(entity.intersects(wall)){
-					System.out.println("HIT WALL");
 					if(entity instanceof Shell){
 						handleShell((Shell) entity);
-					}else{
+					}else if(!(entity instanceof Tread)){
 						em.markForDelete(entity);
 					}
 				}

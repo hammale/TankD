@@ -32,10 +32,10 @@ public class Wall extends BaseEntity {
 
     	GL11.glTexCoord2f(0.5f, 0.0f); 
 	    GL11.glVertex2d(-20/2, -20/2); 
-	    	GL11.glTexCoord2f(0.5f, 0.5f); 
-	    GL11.glVertex2d(20/2, -20/2); 
-	    	GL11.glTexCoord2f(0.25f, 0.25f); 
-	    GL11.glVertex2i(0, 0); 
+	    	GL11.glTexCoord2f(0.5f, 0.5f);
+	    GL11.glVertex2d(20/2, -20/2);
+	    	GL11.glTexCoord2f(0.25f, 0.25f);
+	    GL11.glVertex2i(0, 0);
 	
 	    	GL11.glTexCoord2f(0.5f, 0.5f); 
 	    GL11.glVertex2d(20/2, -20/2); 
