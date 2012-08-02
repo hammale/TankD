@@ -61,17 +61,17 @@ public class Camp1State extends BaseState {
     }
     
 	public void drawLevel(){
-		for(int i=0;i<HEIGHT;i+=20){
-			walls.add(new Wall(em,0,i,20,20));
+		for(int i=55;i<HEIGHT;i+=20){
+			walls.add(new Wall(em,10,i,20,20));
 		}
-		for(int i=0;i<HEIGHT;i+=20){
-			walls.add(new Wall(em,WIDTH-30,i,20,20));
-		}
-		for(int i=0;i<WIDTH;i+=20){
-			walls.add(new Wall(em,i,0,20,20));
+		for(int i=45;i<HEIGHT;i+=20){
+			walls.add(new Wall(em,WIDTH-10,i+10,20,20));
 		}
 		for(int i=0;i<WIDTH;i+=20){
-			walls.add(new Wall(em,i,HEIGHT-30,20,20));
+			walls.add(new Wall(em,i,55,20,20));
+		}
+		for(int i=0;i<WIDTH;i+=20){
+			walls.add(new Wall(em,i,HEIGHT-10,20,20));
 		}
 	}
 	
@@ -88,12 +88,6 @@ public class Camp1State extends BaseState {
         drawLevel();
         ui = new CampInput(game, em);
         player = new Tank(em, 400, 100, 34, 34, 0);
-        Wall tmpwall = new Wall(em, 200, 200, 20, 20);
-        walls.add(tmpwall);
-        System.out.println("A: " + tmpwall.getCuboid().a.getX() + ", " + tmpwall.getCuboid().a.getY());
-        //System.out.println(tmpwall.getCuboid().b.getX() + ", " + tmpwall.getCuboid().b.getY());
-        //System.out.println(tmpwall.getCuboid().c.getX() + ", " + tmpwall.getCuboid().c.getY());
-        //System.out.println(tmpwall.getCuboid().d.getX() + ", " + tmpwall.getCuboid().d.getY());
         bg = new BG(em, 0, 0, 600, 800);
         tanks.add(player);
 	}

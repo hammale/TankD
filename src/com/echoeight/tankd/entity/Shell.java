@@ -129,7 +129,7 @@ public class Shell extends BaseMoveableEntity {
         
         @Override
         public void update(int delta) {
-        	cuboid.rotate(dx, dy, angle);
+        	cuboid.rotate(angle);
             this.x += delta * dx;
             this.y += delta * dy;
             //smoke.update(delta);

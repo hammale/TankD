@@ -166,7 +166,7 @@ public class Tank extends BaseMoveableEntity {
         
         @Override
         public void update(int delta) {
-        	cuboid.rotate(dx, dy, angle);
+        	cuboid.rotate(angle);
          	for(Entity ent : em.getMovingEntities()){
     			if(ent instanceof Shell){
     				ent.update(delta);
