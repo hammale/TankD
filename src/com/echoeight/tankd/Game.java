@@ -16,6 +16,7 @@ public class Game {
 		dm = new DisplayManager(width, height, title);
 		initState();
 		LoadTextures.LoadAll();
+		System.out.println("TankD Started");
 	}
 
 	private void initState(){
