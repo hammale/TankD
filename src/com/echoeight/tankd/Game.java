@@ -13,6 +13,7 @@ public class Game {
 	static Thread mainThread;
 	
 	public Game(int width, int height, String title){
+		System.out.println("TankD Starting...");
 		dm = new DisplayManager(width, height, title);
 		initState();
 		LoadTextures.LoadAll();
