@@ -40,11 +40,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>bison</groupId>
-            <artifactId>bison</artifactId>
-            <version>0.0.3-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.lwjgl.lwjgl</groupId>
             <artifactId>lwjgl</artifactId>
             <version>${lwjgl.version}</version>
@@ -65,12 +60,26 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+        	<groupId>bison</groupId>
+        	<artifactId>bison</artifactId>
+        	<version>1</version>
+        </dependency>
     </dependencies>
     
     <build>
         <sourceDirectory>src</sourceDirectory>
     	<defaultGoal>clean compile package</defaultGoal>
         <plugins>
+	        <plugin>
+	            <groupId>org.codehaus.mojo</groupId>
+	            <artifactId>versions-maven-plugin</artifactId>
+	            <version>1.2</version>
+	            <configuration>
+	                <generateBackupPoms>false</generateBackupPoms>
+	                <allowSnapshots>true</allowSnapshots>
+	            </configuration>
+	        </plugin>        
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
