@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>TankD</groupId>
   <artifactId>TankD</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1</version>
   <name>TankD</name>
   <description>TankD LWJGL Game</description>
 
