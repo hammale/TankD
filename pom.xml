@@ -61,10 +61,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-        	<groupId>bison</groupId>
-        	<artifactId>bison</artifactId>
-        	<version>1</version>
-        </dependency>
+            <groupId>bison</groupId>
+            <artifactId>bison</artifactId>
+            <version>1</version>
+            <scope>compile</scope>
+        </dependency>        
     </dependencies>
     
     <build>
