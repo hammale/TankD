@@ -59,7 +59,13 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
-        </dependency>        
+        </dependency>
+        <dependency>
+            <groupId>bison</groupId>
+            <artifactId>bison</artifactId>
+            <version>1</version>
+            <scope>compile</scope>
+        </dependency>    
     </dependencies>
     
     <build>
