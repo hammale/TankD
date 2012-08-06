@@ -19,14 +19,32 @@ public class Tank extends BaseMoveableEntity {
 	ArrayList<Shell> shells = new ArrayList<Shell>();
 	ArrayList<Tread> treads = new ArrayList<Tread>();
 	Tread tread;
+	public int health,ammo;	
 	
         public Tank(EntityManager em, double x, double y, double width, double height, int angle) {
             super(em, x, y, width, height);
             this.tank = LoadTextures.getTexture("res/tank.png");
             this.angle = angle;
             this.em = em;
+            this.health = 1;
+            this.ammo = 5;
             id = em.assignId(this);
             this.turret = new Turret(em, x, y, 30, 12, 0);
+        }
+        
+        public int getHealth(){
+        	return this.health;
+        }
+        
+        public int getAmmo(){
+        	return this.ammo;
+        }
+        
+        public void setHealth(int health){
+        	this.health = health;
+        }
+        public void setAmmo(int ammo){
+        	this.ammo = ammo;
         }
         
         public ArrayList<Tread> getTreads(){

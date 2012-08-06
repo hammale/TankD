@@ -13,10 +13,10 @@ public class Game {
 	static Thread mainThread;
 	
 	public Game(int width, int height, String title){
+		System.out.println("TankD Started");
 		dm = new DisplayManager(width, height, title);
 		initState();
 		LoadTextures.LoadAll();
-		System.out.println("TankD Started");
 	}
 
 	private void initState(){

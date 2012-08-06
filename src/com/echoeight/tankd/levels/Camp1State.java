@@ -16,7 +16,9 @@ import com.echoeight.bison.entity.Entity;
 import com.echoeight.bison.entity.EntityManager;
 import com.echoeight.bison.states.BaseState;
 import com.echoeight.tankd.Game;
+import com.echoeight.tankd.entity.AmmoIcon;
 import com.echoeight.tankd.entity.BG;
+import com.echoeight.tankd.entity.PlayerTank;
 import com.echoeight.tankd.entity.Shell;
 import com.echoeight.tankd.entity.Tank;
 import com.echoeight.tankd.entity.Tread;
@@ -37,8 +39,9 @@ public class Camp1State extends BaseState {
 	
 	ArrayList<Tank> tanks = new ArrayList<Tank>();
 	ArrayList<Wall> walls = new ArrayList<Wall>();
+	ArrayList<AmmoIcon> ammoIcons = new ArrayList<AmmoIcon>();
 	
-	Tank player;
+	PlayerTank player;
 	BG bg;
 	
     public Camp1State(Game game, int id) {
@@ -87,9 +90,12 @@ public class Camp1State extends BaseState {
 		}
         drawLevel();
         ui = new CampInput(game, em);
-        player = new Tank(em, 400, 100, 34, 34, 0);
+        player = new PlayerTank(em, 400, 100, 34, 34, 0);
         bg = new BG(em, 0, 0, 600, 800);
         tanks.add(player);
+        for(int i=1;i<=player.getAmmo();i++){
+        	ammoIcons.add(new AmmoIcon(em,i*20,10,14,32,0));
+        }
 	}
 	
 	@Override

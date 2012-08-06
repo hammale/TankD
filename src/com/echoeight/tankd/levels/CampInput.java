@@ -6,6 +6,7 @@ import org.lwjgl.input.Mouse;
 import com.echoeight.bison.entity.EntityManager;
 import com.echoeight.bison.util.Fullscreen;
 import com.echoeight.tankd.Game;
+import com.echoeight.tankd.entity.PlayerTank;
 import com.echoeight.tankd.entity.Shell;
 import com.echoeight.tankd.entity.Tank;
 import com.echoeight.tankd.entity.Tread;
@@ -28,7 +29,7 @@ public class CampInput {
 		this.game = game;
 	}
 	
-	public void handleInput(EntityManager em, Tank tank){
+	public void handleInput(EntityManager em, PlayerTank tank){
 		handleMouse(tank);
 		boolean drawTread = false;
 		if(Keyboard.isKeyDown(Keyboard.KEY_UP)){
