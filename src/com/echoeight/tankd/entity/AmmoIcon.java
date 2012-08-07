@@ -60,30 +60,30 @@ public class AmmoIcon extends BaseMoveableEntity {
         	GL11.glBegin(GL11.GL_TRIANGLES); 
 
 	        	GL11.glTexCoord2f(0.5f, 0.0f); 
-	        GL11.glVertex2d(-ammo.getTextureHeight()/1, -ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(-ammo.getTextureHeight()/1.6, -ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.5f, 0.5f); 
-	        GL11.glVertex2d(ammo.getTextureHeight()/1, -ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(ammo.getTextureHeight()/1.6, -ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.25f, 0.25f); 
 	        GL11.glVertex2i(0, 0); 
 	
 	        	GL11.glTexCoord2f(0.5f, 0.5f); 
-	        GL11.glVertex2d(ammo.getTextureHeight()/1, -ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(ammo.getTextureHeight()/1.6, -ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.0f, 0.5f); 
-	        GL11.glVertex2d(ammo.getTextureHeight()/1, ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(ammo.getTextureHeight()/1.6, ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.25f, 0.25f); 
 	        GL11.glVertex2i(0, 0); 
 	        
 	        	GL11.glTexCoord2f(0.0f, 0.5f); 
-	        GL11.glVertex2d(ammo.getTextureHeight()/1, ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(ammo.getTextureHeight()/1.6, ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.0f, 0.0f); 
-	        GL11.glVertex2d(-ammo.getTextureHeight()/1, ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(-ammo.getTextureHeight()/1.6, ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.25f, 0.25f); 
 	        GL11.glVertex2i(0, 0); 
 	
 	        	GL11.glTexCoord2f(0.0f, 0.0f); 
-	        GL11.glVertex2d(-ammo.getTextureHeight()/1, ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(-ammo.getTextureHeight()/1.6, ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.5f, 0.0f); 
-	        GL11.glVertex2d(-ammo.getTextureHeight()/1, -ammo.getTextureWidth()/1); 
+	        GL11.glVertex2d(-ammo.getTextureHeight()/1.6, -ammo.getTextureWidth()/1.6); 
 	        	GL11.glTexCoord2f(0.25f, 0.25f); 
 	        GL11.glVertex2i(0, 0); 
 

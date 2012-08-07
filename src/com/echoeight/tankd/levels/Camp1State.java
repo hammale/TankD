@@ -93,9 +93,9 @@ public class Camp1State extends BaseState {
         player = new PlayerTank(em, 400, 100, 34, 34, 0);
         bg = new BG(em, 0, 0, 600, 800);
         tanks.add(player);
-        for(int i=1;i<=player.getAmmo();i++){
-        	ammoIcons.add(new AmmoIcon(em,i*20,10,14,32,0));
-        }
+        //for(int i=1;i<=player.getAmmo();i++){
+        	ammoIcons.add(new AmmoIcon(em,200,100,32,14,0));
+        //}
 	}
 	
 	@Override
