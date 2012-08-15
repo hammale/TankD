@@ -1,6 +1,5 @@
 package com.echoeight.tankd.states;
 
-import com.echoeight.bison.entity.EntityManager;
 import com.echoeight.bison.states.State;
 import com.echoeight.tankd.Game;
 
@@ -18,8 +17,6 @@ public class StateManager {
 	
     public void enterState(State state){
     	setActiveState(state);
-    	EntityManager em = new EntityManager();
-    	em.removeAll();
     	activeState = state;
     	if(tm.isActive()){
         	game.dm.clear();

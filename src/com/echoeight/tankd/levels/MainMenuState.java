@@ -16,10 +16,9 @@ import com.echoeight.bison.states.BaseState;
 import com.echoeight.tankd.Game;
 import com.echoeight.tankd.entity.BG;
 
-public class Menu1State extends BaseState {
+public class MainMenuState extends BaseState {
 	
 	protected Game game;
-	
 	private long lastFrame;
 	
 	EntityManager em;
@@ -29,7 +28,7 @@ public class Menu1State extends BaseState {
 	
 	BG bg;
 	
-    public Menu1State(Game game, int id) {
+    public MainMenuState(Game game, int id) {
 		super(id);
 		this.game = game;
 		WIDTH = game.dm.getWidth();
@@ -63,7 +62,6 @@ public class Menu1State extends BaseState {
 	@Override
 	public void update() {
 		Color.white.bind();
-		//int delta = getDelta();
 		GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 		bg.draw();
 		

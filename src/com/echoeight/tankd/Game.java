@@ -1,8 +1,7 @@
 package com.echoeight.tankd;
 
 import com.echoeight.bison.display.DisplayManager;
-import com.echoeight.tankd.images.LoadTextures;
-import com.echoeight.tankd.levels.Camp1State;
+import com.echoeight.tankd.levels.MainMenuState;
 import com.echoeight.tankd.states.StateManager;
 
 
@@ -16,12 +15,11 @@ public class Game {
 		System.out.println("TankD Started");
 		dm = new DisplayManager(width, height, title);
 		initState();
-		LoadTextures.LoadAll();
 	}
 
 	private void initState(){
 		sm = new StateManager(this);
-		sm.enterState(new Camp1State(this, 0));
+		sm.enterState(new MainMenuState(this, 0));
 	}
 	
 	public static void main(String[] argv) {

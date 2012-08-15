@@ -2,12 +2,10 @@ package com.echoeight.tankd.levels;
 
 import java.util.ArrayList;
 
-import org.lwjgl.LWJGLException;
 import org.lwjgl.Sys;
 import org.lwjgl.input.Cursor;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
-import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.opengl.CursorLoader;
@@ -24,7 +22,6 @@ import com.echoeight.tankd.entity.Tank;
 import com.echoeight.tankd.entity.Tread;
 import com.echoeight.tankd.entity.Turret;
 import com.echoeight.tankd.entity.Wall;
-import com.echoeight.tankd.images.LoadTextures;
 
 public class Camp1State extends BaseState {
 	
@@ -81,7 +78,6 @@ public class Camp1State extends BaseState {
 	@Override
 	public void init() {
 		initGL();
-		LoadTextures.LoadAll();
         try {
             Cursor cursor = (CursorLoader.get()).getCursor("res/cursor.png",8,8);
 			Mouse.setNativeCursor(cursor);
@@ -164,14 +160,14 @@ public class Camp1State extends BaseState {
 	}
 	
 	private void initGL(){
-		try {
-			Display.setDisplayMode(new DisplayMode(WIDTH,HEIGHT));
-			Display.create();
-			Display.setTitle(game.dm.getTitle());
-		} catch (LWJGLException e) {
-			e.printStackTrace();
-		}
-
+//		try {
+//			Display.setDisplayMode(new DisplayMode(WIDTH,HEIGHT));
+//			Display.create();
+//			Display.setTitle(game.dm.getTitle());
+//		} catch (LWJGLException e) {
+//			e.printStackTrace();
+//		}
+//
 		GL11.glMatrixMode(GL11.GL_MODELVIEW);
 		GL11.glMatrixMode(GL11.GL_PROJECTION);
 		GL11.glLoadIdentity();
